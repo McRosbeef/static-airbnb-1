@@ -1,0 +1,18 @@
+seb:
+  name: Seb's home
+  city: Paris
+  summary: Charming appartment in Montmartre
+  flat_picture: card-paris.jpg
+  owner_picture: seb.jpg
+romain:
+  name: Romain's home
+  city: London
+  summary: Charming appartment in London
+  flat_picture: card-london.jpeg
+  owner_picture: romain.jpg
+anne:
+  name:  Anne's home
+  city: Brussels
+  summary: Charming appartment in Brussels
+  flat_picture: card-brussels.jpeg
+  owner_picture: anne.jpg

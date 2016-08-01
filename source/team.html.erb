@@ -1,17 +1,19 @@
-<div class="container">
-	<h2>Our team</h2>
-	
-	<% number =  3 + 4 %>
+<div id="team">
+	<div class="container text-center padded">
+		<h2>Our team</h2>
 
-	<h1>	<%= number %> Member </h1>
+		<% members = %w(seb anne romain) %>
 
-	<% members = %w( Seb Boris Romain) %>
-
-	<ul class"list-inline>
-		
-		<% members.each do |member| %>
-			<li><img src="http://placehold.it/30x30" alt="" class="img-circle"></li>
-			<h3><%= member %></h3>
-		<% end %>
-	</ul>
+		<ul class="list-inline">
+			
+			<% members.each do |member| %>
+				<li>
+					<%= image_tag "#{member}.jpg", class: "avatar-large" %>
+					
+					<h3><%= member %></h3>
+				</li>
+				
+			<% end %>
+		</ul>
+	</div>
 </div>
