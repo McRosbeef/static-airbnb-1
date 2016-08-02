@@ -46,7 +46,7 @@
               <p><%= flat.summary %></p>
             </div>
             <%= image_tag flat.owner_picture, class: "card-user avatar avatar-large" %>
-            <a class="card-link" href="#" ></a>
+            <%= link_to "", "flats/#{owner}.html", class: "card-link" %>
           </div>
         </div>
       <% end %>

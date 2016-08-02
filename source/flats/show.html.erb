@@ -1,0 +1,90 @@
+<% flat = data.flats[owner] %>
+
+<div class="flat-banner" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path flat.flat_picture %>');">
+</div>
+<div class="header-flat">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-1">
+				<div class="header-flat-details">
+					<div class="header-flat-owner text-center">
+						<%= image_tag flat.owner_picture, class: "avatar-big"%>
+						<p><%= owner.capitalize %></p>
+					</div>
+					<div class="header-flat-name">
+						<h1><%= flat.summary %></h1>
+						<p><%= flat.city %></p>
+						<% flat.rating.times do %>
+							<i class="fa fa-star" style="color: #DAB919"></i>
+							<%end%>
+							<% (5-flat.rating).times do %>
+							<i class="fa fa-star" style="color: #666666"></i>
+							<%end%>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-4">
+			<div class="wrapper-grey">
+					<h3>Book this flat</h3>
+						<form action="#">
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="check-in" id="check-in">
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="check-out" id="check-out">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="form-group">
+										<select name="" id="guests" class="form-control">
+											<option value="1">1 Guest</option>
+											<option value="2">2 Guest</option>
+											<option value="3">3 Guest</option>
+											<option value="4">4 Guest</option>
+										</select>
+									</div>
+									<input type="submit" class="btn btn-primary" value="Book-it" style="width: 100%">
+								</div>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div class="body-flat">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+				<h3>About this flat</h3>
+				<p><%= flat.description %></p>
+				<hr>
+				<div class="row">
+					<div class="col-xs-12 col-sm-2">
+						<p>The Space</p>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<p>Accommodates: <strong>2</strong></p>
+						<p>Bathrooms: <strong>1</strong></p>
+						<p>	Bed type: <strong>Real Bed</strong></p>
+						<p>Bedrooms: <strong>1</strong></p>
+
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<p>Beds: <strong>1</strong></p>
+						<p>Property type: <strong>Apartment</strong></p>
+						<p>Room type: <strong>Entire home/apt</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -4,15 +4,21 @@ seb:
   summary: Charming appartment in Montmartre
   flat_picture: card-paris.jpg
   owner_picture: seb.jpg
+  rating: 3
+  description: This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.
 romain:
   name: Romain's home
   city: London
   summary: Charming appartment in London
   flat_picture: card-london.jpeg
   owner_picture: romain.jpg
+  rating: 4
+  description: This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.
 anne:
   name:  Anne's home
   city: Brussels
   summary: Charming appartment in Brussels
   flat_picture: card-brussels.jpeg
   owner_picture: anne.jpg
+  rating: 2
+  description: This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.
